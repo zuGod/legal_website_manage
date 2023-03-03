@@ -14,7 +14,7 @@
         <el-button style="float: right; padding: 3px 0"
                    type="text">操作按钮</el-button>
       </div>
-      <div v-for="o in 4"
+      <div v-for="o in 3"
            :key="o"
            class="text item">
         {{'列表内容 ' + o }}
