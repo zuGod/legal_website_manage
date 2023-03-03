@@ -14,5 +14,17 @@ const request = axios.create({
   //   }
   // }]
 })
+// 请求拦截器
+request.interceptors.request.use(
+  // 所有请求会经过
+  function (config) {
+    const token = window.localStorage.getItem('token')
+    if (token) {
+      // 后端要求把需要授权的用户身份放到请求头中
+      config.headers.Authorization = token
+    }
+    return config
+  }
+)
 
 export default request

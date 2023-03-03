@@ -8,3 +8,12 @@ export const loginAPI = data => {
     data
   })
 }
+
+// 获取用户信息
+export const userInfoAPI = () => {
+  return request({
+    method: 'GET',
+    url: '/my/userinfo'
+
+  })
+}

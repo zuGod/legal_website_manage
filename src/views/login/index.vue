@@ -71,7 +71,12 @@ export default {
           message: '登录成功',
           type: 'success'
         })
+        // 关闭loading
         this.loginLoading = false
+        // 将接口返回的用户相关数据放到本地存储
+        window.localStorage.setItem('token', res.data.token)
+        // 跳转
+        this.$router.push({ name: 'home' })
       }).catch(err => {
         console.log('登录失败', err)
         // 登录失败
