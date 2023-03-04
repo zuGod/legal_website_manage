@@ -5,6 +5,8 @@ import Home from '@/views/home/index'
 import Layout from '@/views/layout/index'
 import Article from '@/views/article/index'
 import Publish from '@/views/publish/index'
+import Comment from '@/views/comment/index'
+import Person from '@/views/personList/index'
 Vue.use(VueRouter)
 
 const routes = [
@@ -31,6 +33,15 @@ const routes = [
         path: '/publish',
         name: 'publish',
         component: Publish
+      },
+      {
+        path: '/comment',
+        name: 'comment',
+        component: Comment
+      }, {
+        path: '/person',
+        name: 'person',
+        component: Person
       }
     ]
   }

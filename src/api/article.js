@@ -23,3 +23,12 @@ export const postDelArticle = data => {
     data
   })
 }
+
+// 发布文章
+export const postCreateArticle = data => {
+  return request({
+    method: 'POST',
+    url: '/my/createArticle',
+    data
+  })
+}

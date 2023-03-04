@@ -25,7 +25,7 @@
       <i class="el-icon-tickets"></i>
       <span slot="title">评论管理</span>
     </el-menu-item>
-    <el-menu-item index="/fans">
+    <el-menu-item index="/person">
       <i class="el-icon-user"></i>
       <span slot="title">名单管理</span>
     </el-menu-item>

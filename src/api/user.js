@@ -17,3 +17,21 @@ export const userInfoAPI = () => {
 
   })
 }
+
+// 获取普通用户信息
+export const regularInfo = params => {
+  return request({
+    method: 'GET',
+    url: '/my/getRegularInfo',
+    params
+  })
+}
+
+// 跟新普通用户状态
+export const logRegularInfo = params => {
+  return request({
+    method: 'GET',
+    url: '/my/logRegularInfo',
+    params
+  })
+}
