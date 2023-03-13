@@ -7,6 +7,8 @@ import Article from '@/views/article/index'
 import Publish from '@/views/publish/index'
 import Comment from '@/views/comment/index'
 import Person from '@/views/personList/index'
+import Active from '@/views/active/index'
+import Setting from '@/views/setting/index'
 Vue.use(VueRouter)
 
 const routes = [
@@ -42,6 +44,16 @@ const routes = [
         path: '/person',
         name: 'person',
         component: Person
+      },
+      {
+        path: '/active',
+        name: 'active',
+        component: Active
+      },
+      {
+        path: '/setting',
+        name: 'setting',
+        component: Setting
       }
     ]
   }
